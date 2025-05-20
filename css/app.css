@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Exile&display=swap');
+
+.exile-regular {
+  font-family: "Exile", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* google font>embed code>@import에서 
+1. Embed code in the <head> of your html
+2. Exile: CSS class
+복사 */
