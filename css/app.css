@@ -8,7 +8,6 @@
 
 /* 전체 폰트,색상 설정 */
 :root{
-
 }
 
 /* career section start */
@@ -75,9 +74,20 @@ ease out : 빠르게 느리게
   z-index: 1;
 }
 
-
-
 /* career section end */
+
+.portfolio-item {
+  cursor: pointer;
+  margin-bottom: 1.8rem;
+}
+
+/* 눌렀을때 화면 크기 */
+.modal-dialog {
+  max-width: 80%;
+}
+
+
+
 
 
 /* google font>embed code>@import에서 
