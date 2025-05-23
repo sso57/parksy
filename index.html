@@ -13,6 +13,9 @@
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/glightbox.min.css">
 
     <link rel="stylesheet" href="./css/app.css">
     <title>박소연 포트폴리오</title>
@@ -177,12 +180,8 @@
 
                         
                     </div>
-
-                </div>
-
-                
+                </div>              
             </div>
-
         </section>
         
 <!-- 카드
@@ -243,6 +242,7 @@
             </div>
         </section>
   -->
+
         <section id="card">
             <div class="container">
                 <div class="row">
@@ -303,9 +303,9 @@
             
         </section>
 
-        <section id="Portfolio">
+        <section id="portfolio">
             <div class="container mt-5">
-                <h2 class="text-center mb-5">Design & Video Portfolio</h2>
+                <h2 class="text-center mb-5" data-aos="fade-up">Design & Video Portfolio</h2>
                 <input type="text" id="searchInput" class="form-control" placeholder="검색어를 입력하세요...">
 
                 <!-- 분류 버튼 -->
@@ -350,10 +350,132 @@
                  </div>
             </div>
         </section>
+
+<!-- id는 중복 불가능. section 복사해서 쓰려면 아이디에 숫자 붙이거나 변경 ex. tabs1-->
+
+        <section id="tabs" class="tabs section my-5">
+            <div class="container section-title" data-aos="fade-up">
+                <h2 class="text-center">Departments</h2>
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            </div>
+            <div>
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <ul class="nav nav-tabs flex-column">
+                                <li class="nav-item"><a class="nav-link active show" data-bs-toggle="tab" href="#tabs-tab-1">상세페이지 1</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-2">상세페이지 2</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-3">상세페이지 3</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-4">상세페이지 4</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-5">상세페이지 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-10 mt-5 mt-lg-0">
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="tabs-tab-1">
+                                    <div class="row">
+                                        <div class="col-lg-8 details order-2 order-lg-1">
+                                            <h3>상세페이지 설명 1</h3>
+                                            <p class="fst-italic">Lorem ipsum dolor sit amet</p>
+                                            <p>consectetur adipisicing elit. Eligendi, corrupti, consectetur adipisicing elitconsectetur adipisicing elit</p>
+                                        </div>
+                                        <div class="col-lg-4 text-center order-1 order-lg-2">
+                                            <a href="./images/1.jpg"><img src="./images/1.jpg" alt="" class="img-fluid"></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="tabs-tab-2">
+                                    <div class="row">
+                                        <div class="col-lg-8 details order-2 order-lg-1">
+                                            <h3>상세페이지 설명 2</h3>
+                                            <p class="fst-italic">Lorem ipsum dolor sit amet</p>
+                                            <p>consectetur adipisicing elit. Eligendi, corrupti, consectetur adipisicing elitconsectetur adipisicing elit</p>
+                                        </div>
+                                        <div class="col-lg-4 text-center order-1 order-lg-2">
+                                            <img src="./images/2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="tabs-tab-3">
+                                    <div class="row">
+                                        <div class="col-lg-8 details order-2 order-lg-1">
+                                            <h3>상세페이지 설명 3</h3>
+                                            <p class="fst-italic">Lorem ipsum dolor sit amet</p>
+                                            <p>consectetur adipisicing elit. Eligendi, corrupti, consectetur adipisicing elitconsectetur adipisicing elit</p>
+                                        </div>
+                                        <div class="col-lg-4 text-center order-1 order-lg-2">
+                                            <img src="./images/3.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="tabs-tab-4">
+                                    <div class="row">
+                                        <div class="col-lg-8 details order-2 order-lg-1">
+                                            <h3>상세페이지 설명 4</h3>
+                                            <p class="fst-italic">Lorem ipsum dolor sit amet</p>
+                                            <p>consectetur adipisicing elit. Eligendi, corrupti, consectetur adipisicing elitconsectetur adipisicing elit</p>
+                                        </div>
+                                        <div class="col-lg-4 text-center order-1 order-lg-2">
+                                            <img src="./images/4.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="tabs-tab-5">
+                                    <div class="row">
+                                        <div class="col-lg-8 details order-2 order-lg-1">
+                                            <h3>상세페이지 설명 5</h3>
+                                            <p class="fst-italic">Lorem ipsum dolor sit amet</p>
+                                            <p>consectetur adipisicing elit. Eligendi, corrupti, consectetur adipisicing elitconsectetur adipisicing elit</p>
+                                        </div>
+                                        <div class="col-lg-4 text-center order-1 order-lg-2">
+                                            <img src="./images/1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="aboout" class="aboout section my-5">
+            <div class="container section-title" data-aos="fade-up">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, nisi reiciendis.</p>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+                        <img src="./images/1.jpg" class="img-fluid" alt=""><a href="https://www.youtube.com/watch?v=GSWavfzSVnE" class="glightboxpu video-play-btn">영상</a>
+                    </div>
+                    <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Hello Centum</h3>
+                        <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, tenetur eius!</p>
+
+                        <ul>
+                            <li><i class="bi bi-check-all"></i><span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span></li>
+
+                            <li><i class="bi bi-check-all"></i><span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span></li>
+
+                            <li><i class="bi bi-check-all"></i><span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span></li>
+                        </ul> 
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, dolore in!</p>
+                    </div>                    
+                </div>
+            </div>
+        </section>
     </main>
 
 <!-- 
-포트폴리오 섹션의 모달(팝업 창)섹션
+본문(main) 밖 포트폴리오 섹션의 모달(팝업 창)섹션
 영상 넣을때
 1. 주소 넣고 ?까지 지우면 그냥 삽입
 2. ?까지 남기고 autoplay=1&mute=1&control=1&loop=1 삽입하면 자동재생 
@@ -475,15 +597,15 @@
         </div>    
     </section>
 
-
-
     <footer class="foodter mt-auto py-3 bg-dark">
         <div class="container">
-            <a style="text-decoration: none;" href="#"><span>Copyleft 2025 김센텀</span></a>
+            <a style="text-decoration: none;" href="#"><span>Copyright 2025 김센텀</span></a>
         </div>
     </footer>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/glightbox.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>
